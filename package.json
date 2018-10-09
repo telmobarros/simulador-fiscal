@@ -1,0 +1,11 @@
+{
+  "name": "fiscalidade",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "angular-http-server"
+  },
+  "devDependencies": {
+    "angular-http-server": "^1.4.5"
+  }
+}

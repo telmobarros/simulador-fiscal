@@ -1,0 +1,153 @@
+{
+	"2018" : {
+		"CAE": {
+			"A" : {
+				"nome": "Agricultura, produção animal, caça, floresta e pesca",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"B" : {
+				"nome": "Indústrias extractivas",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"C" : {
+				"nome": "Indústrias transformadoras",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"D" : {
+				"nome": "Electricidade, gás, vapor, água quente e fria e ar frio",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"E" : {
+				"nome": "Captação, tratamento e distribuição de água; saneamento, gestão de resíduos e despoluição",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"F" : {
+				"nome": "Construção",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"G" : {
+				"nome": "Comércio por grosso e a retalho; reparação de veículos automóveis e motociclos",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"H" : {
+				"nome": "Transportes e armazenagem",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"I" : {
+				"nome": "Alojamento, restauração e similares",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"J" : {
+				"nome": "Actividades de informação e de comunicação",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"K" : {
+				"nome": "Actividades financeiras e de seguros",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"L" : {
+				"nome": "Actividades imobiliárias",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"M" : {
+				"nome": "Actividades de consultoria, científicas, técnicas e similares",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"N" : {
+				"nome": "Actividades administrativas e dos serviços de apoio",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"O" : {
+				"nome": "Administração Pública e Defesa; Segurança Social Obrigatória",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"P" : {
+				"nome": "Educação",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"Q" : {
+				"nome": "Actividades de saúde humana e apoio social",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"R" : {
+				"nome": "Actividades artísticas, de espectáculos, desportivas e recreativas",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"S" : {
+				"nome": "Outras actividades de serviços",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"T" : {
+				"nome": "Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das famílias para uso próprio",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			},
+			"U" : {
+				"nome": "Actividades dos organismos internacionais e outras instituições extra-territoriais",
+				"taxas": {
+					"IRS": 0.15,
+					"IRC": 0.15
+				}
+			}
+		}
+	}
+}
