@@ -1,10 +1,10 @@
 var app = angular.module("app", ["ngRoute", "ngAnimate",]);
 
-app.filter("trustUrl", function($sce) {
+/*app.filter("trustUrl", function($sce) {
 	return function(Url) {
 		return $sce.trustAsResourceUrl(Url);
 	};
-});
+});*/
 
 /* ROUTES CONFIGURATION START */
 app.config(function($routeProvider,$locationProvider) {
@@ -77,11 +77,11 @@ app.controller('footerCtrl', function($scope, $rootScope, $http, $route, $locati
 });
 
 // Views controllers
-app.controller('indexCtrl', function($scope, $http, $location) {
+app.controller('indexCtrl', function($scope) {
 
 });
 
-app.controller('calculoCtrl', function($scope, $rootScope, $routeParams, $http, $location, $timeout) {
+app.controller('calculoCtrl', function($scope) {
 
 });
 
