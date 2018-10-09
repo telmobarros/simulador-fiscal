@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulador fiscal">
+    <meta name="author" content="">
+    <base href="/">
+
+    <title>Simulador Fiscal</title>
+
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+<body ng-app="app" class="bg-light">
+
+<!-- Page content -->
+
+<main ng-view></main>
+
+<div class="container" ng-include="'partials/footer.htm'"></div>
+
+<!-- jQuery -->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<!-- angularJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"
+        integrity="sha256-ruP2+uorUblSeg7Tozk75u8TaSUKRCZVvNV0zRGxkRQ="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-route.min.js"
+        integrity="sha256-ikB/Z+UBlSKWcqgnztDxPZCTiBVKMU5BknAOyemg5rA="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"
+        integrity="sha256-FN0OJzazWIi06C3jaX3q4Q8ptDdecyBT/xEJm2+UYvo="
+        crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+        crossorigin="anonymous"></script>
+
+<!-- pdfmake -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.38/pdfmake.min.js"
+        integrity="sha256-nKIeEnSGXAp7Av9BxQaCFNMgYRVjfMCxY7yK02quQno="
+        crossorigin="anonymous"></script>
+<!-- html2canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+        integrity="sha256-c3RzsUWg+y2XljunEQS0LqWdQ04X1D3j22fd/8JCAKw="
+        crossorigin="anonymous"></script>
+
+<script src="./javascripts/app.js"></script>
+
+</body>
+</html>
