@@ -10,15 +10,15 @@ var app = angular.module("app", ["ngRoute", "ngAnimate",]);
 app.config(function($routeProvider,$locationProvider) {
 	$routeProvider
 		.when("/", {
-			templateUrl : "./partials/index.htm",
+			templateUrl : "partials/index.htm",
 			controller : "indexCtrl"
 		})
 		.when("/calculo", {
-			templateUrl : "./partials/calculo.htm",
+			templateUrl : "partials/calculo.htm",
 			controller : "calculoCtrl"
 		})
 		.when("/resultado", {
-			templateUrl : "./partials/resultado.htm",
+			templateUrl : "partials/resultado.htm",
 			controller : "resultadoCtrl"
 		})
 		.otherwise({
