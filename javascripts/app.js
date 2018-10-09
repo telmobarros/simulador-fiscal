@@ -87,7 +87,9 @@ app.controller('calculoCtrl', function($scope) {
 
 app.controller('resultadoCtrl', function($scope, $rootScope) {
 	$rootScope.loading = true;
-	$rootScope.calculateResults();
+	if($rootScope.calculateResults){
+		$rootScope.calculateResults();
+	}
 
 	$scope.export = function(){
 		html2canvas(document.getElementById('exportable'), {
