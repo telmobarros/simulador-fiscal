@@ -1,18 +1,5 @@
 var app = angular.module("app", ["ngRoute", "ngAnimate",]);
 
-/* CUSTOM SERVICES START */
-app.factory('CacheService', function ($localStorage) {
-	return {
-		getData: function () {
-			return $localStorage.data;
-		},
-		setData: function (data) {
-			$localStorage.data = data;
-		}
-	};
-});
-/* CUSTOM SERVICES START */
-
 app.filter("trustUrl", function($sce) {
 	return function(Url) {
 		return $sce.trustAsResourceUrl(Url);
