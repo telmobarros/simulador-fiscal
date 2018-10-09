@@ -38,7 +38,7 @@ app.controller('footerCtrl', function($scope, $rootScope, $http, $route, $locati
 	$rootScope.CAE = $route.current.params.CAE;
 	$rootScope.rendimentos = parseInt($route.current.params.rendimentos);
 	$rootScope.gastos = parseInt($route.current.params.gastos);
-	$rootScope.tipo = ($route.current.params.tipo === 'geral' || $route.current.params.tipo === 'PME' || $route.current.params.tipo === 'excecoes') ? $route.current.params.tipo || 'geral';
+	$rootScope.tipo = ($route.current.params.tipo === 'geral' || $route.current.params.tipo === 'PME' || $route.current.params.tipo === 'excecoes') ? $route.current.params.tipo : 'geral';
 
 	$rootScope.results = {};
 
