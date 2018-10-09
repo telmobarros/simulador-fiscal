@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "angular-http-server"
+    "start": "angular-http-server",
+    "minify": "node minify.js"
   },
   "devDependencies": {
-    "angular-http-server": "^1.4.5"
+    "angular-http-server": "^1.4.5",
+    "node-minify": "^3.5.0"
   }
 }

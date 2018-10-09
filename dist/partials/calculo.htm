@@ -1,0 +1,103 @@
+<div class="container">
+    <img class="loading" src="/images/loading.svg" ng-show="loading" />
+    <div class="row py-4">
+        <div class="col-3 col-md-2">
+            <a href="/">
+                <img class="d-block mx-auto mb-4" src="/images/logo.png" alt="" width="72" height="72">
+            </a>
+        </div>
+        <div class="col-9 col-md-8">
+            <h3><a href="/">Simulador fiscal</a></h3>
+            <p class="text-muted">Simulador de apoio à decisão do regime de início de atividade.</p>
+        </div>
+        <div class="col-12 col-md-2">
+            <select class="form-control form-control-sm" id="ano" name="ano" ng-model="$root.ano">
+                <option value="2018">2018</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3"></h4>
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="form-group">
+                        <label for="CAE">CAE - Código de atividade</label>
+                        <select class="form-control" id="CAE" name="CAE" ng-model="$root.CAE">
+                            <option value="A">A - Agricultura, produção animal, caça, floresta e pesca</option>
+                            <option value="B">B - Indústrias extractivas</option>
+                            <option value="C">C - Indústrias transformadoras</option>
+                            <option value="D">D - Electricidade, gás, vapor, água quente e fria e ar frio</option>
+                            <option value="E">E - Captação, tratamento e distribuição de água; saneamento, gestão de resíduos e despoluição</option>
+                            <option value="F">F - Construção</option>
+                            <option value="G">G - Comércio por grosso e a retalho; reparação de veículos automóveis e motociclos</option>
+                            <option value="H">H - Transportes e armazenagem</option>
+                            <option value="I">I - Alojamento, restauração e similares</option>
+                            <option value="J">J - Actividades de informação e de comunicação</option>
+                            <option value="K">K - Actividades financeiras e de seguros</option>
+                            <option value="L">L - Actividades imobiliárias</option>
+                            <option value="M">M - Actividades de consultoria, científicas, técnicas e similares</option>
+                            <option value="N">N - Actividades administrativas e dos serviços de apoio</option>
+                            <option value="O">O - Administração Pública e Defesa; Segurança Social Obrigatória</option>
+                            <option value="P">P - Educação</option>
+                            <option value="Q">Q - Actividades de saúde humana e apoio social</option>
+                            <option value="R">R - Actividades artísticas, de espectáculos, desportivas e recreativas</option>
+                            <option value="S">S - Outras actividades de serviços</option>
+                            <option value="T">T - Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das famílias para uso próprio</option>
+                            <option value="U">U - Actividades dos organismos internacionais e outras instituições extra-territoriais</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <label for="rendimentos">Rendimentos estimados</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-right" id="rendimentos" name="rendimentos" ng-model="$root.rendimentos" placeholder="" value="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                            <span class="input-group-text">€</span>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback">
+                        Inválido
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <label for="gastos">Gastos estimados</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-right" id="gastos" name="gastos" ng-model="$root.gastos" placeholder="" value="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                            <span class="input-group-text">€</span>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback">
+                        Inválido
+                    </div>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <p class="mb-2">Tipo de Empresa</p>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input id="geral" name="tipoEmpresa" ng-model="$root.tipo" type="radio" class="custom-control-input" value="geral" required>
+                        <label class="custom-control-label" for="geral">Geral</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input id="PME" name="tipoEmpresa" ng-model="$root.tipo" type="radio" class="custom-control-input" value="PME" required>
+                        <label class="custom-control-label" for="PME">PME</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input id="excecoes" name="tipoEmpresa" ng-model="$root.tipo" type="radio" class="custom-control-input" value="excecoes" required>
+                        <label class="custom-control-label" for="excecoes">Exceções</label>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <a class="btn btn-primary btn-lg btn-block" href="/resultado?ano={{ $root.ano }}&CAE={{ $root.CAE }}&rendimentos={{ $root.rendimentos }}&gastos={{ $root.gastos }}&tipo={{ $root.tipo }}">Obter resultado</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
