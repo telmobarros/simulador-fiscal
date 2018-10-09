@@ -66,7 +66,7 @@ app.controller('footerCtrl', function($scope, $rootScope, $http, $route, $locati
 	};
 
 	$http
-		.get('/data.json')
+		.get('./data.json')
 		.then(function(response){
 			if(response.data){
 				$rootScope.all = response.data; // download the file before anything else
