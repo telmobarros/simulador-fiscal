@@ -34,11 +34,11 @@ app.config(function($routeProvider,$locationProvider) {
 app.controller('footerCtrl', function($scope, $rootScope, $http, $route, $location) {
 	$rootScope.all = null;
 
-	$rootScope.ano = $route.current.params.ano || "2018";
+	$rootScope.ano = $route.current.params.ano || '2018';
 	$rootScope.CAE = $route.current.params.CAE;
 	$rootScope.rendimentos = parseInt($route.current.params.rendimentos);
 	$rootScope.gastos = parseInt($route.current.params.gastos);
-	$rootScope.tipo = $route.current.params.tipo;
+	$rootScope.tipo = ($route.current.params.tipo === 'geral' || $route.current.params.tipo === 'PME' || $route.current.params.tipo === 'excecoes') ? $route.current.params.tipo || 'geral';
 
 	$rootScope.results = {};
 
@@ -70,7 +70,6 @@ app.controller('footerCtrl', function($scope, $rootScope, $http, $route, $locati
 		.then(function(response){
 			if(response.data){
 				$rootScope.all = response.data; // download the file before anything else
-				console.log(response.data);
 				$rootScope.calculateResults();
 			}
 		});
