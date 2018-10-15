@@ -48,12 +48,19 @@ app.controller('footerCtrl', function($scope, $rootScope, $http, $route, $locati
 		$rootScope.results = {
 			naoSocietario: {
 				regimeSimplificado: {
+					nome: "Não Societária em Regime Simplificado"
 				},
-				contabilidadeOrganizada: {}
+				contabilidadeOrganizada: {
+					nome: "Não Societária em Contabilidade Organizada"
+				}
 			},
 			societario: {
-				regimeSimplificado: {},
-				contabilidadeOrganizada: {}
+				regimeSimplificado: {
+					nome: "Societária em Regime Simplificado"
+				},
+				contabilidadeOrganizada: {
+					nome: "Societária em Contabilidade Organizada"
+				}
 			}
 		};
 		if ($rootScope.ano &&
@@ -205,6 +212,7 @@ app.controller('footerCtrl', function($scope, $rootScope, $http, $route, $locati
 				$rootScope.nScO = nScO;
 				$rootScope.srS = srS;
 				$rootScope.scO = scO;
+				$rootScope.best = best;
 
 
 				console.log($rootScope.results);
