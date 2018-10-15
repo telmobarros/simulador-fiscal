@@ -30,7 +30,7 @@ div.best {
 }
 
 div.best ul {
-  background-color: rgba(0, 128, 0, 0.25);
+  background-color: rgba(0, 128, 0, 0.15);
 }
 
 div.best ul li{
@@ -42,10 +42,7 @@ div.not-applicable {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-div.not-applicable ul {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-div.not-applicable ul li{
-  background-color: inherit;
+div.not-applicable h3{
+  padding: 70px 0;
+  color: rgba(0, 0, 0, 0.2);
 }

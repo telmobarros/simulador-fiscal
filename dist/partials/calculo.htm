@@ -23,9 +23,16 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="form-group">
-                        <label for="CAE">CAE - Código de atividade</label>
-                        <select class="form-control" id="CAE" name="CAE" ng-model="$root.CAE">
-                            <option value="A">A - Agricultura, produção animal, caça, floresta e pesca</option>
+                        <label for="setorIRS">Em que categorias se enquadra o seu estabelecimento:</label>
+                        <select class="form-control" id="setorIRS" name="setorIRS" ng-model="$root.setorIRS">
+                            <option value="A">Alínea A)</option>
+                            <option value="B">Alínea B)</option>
+                            <option value="C">Alínea C)</option>
+                            <option value="D">Alínea D)</option>
+                            <option value="E">Alínea E)</option>
+                            <option value="F">Alínea F)</option>
+                            <option value="G">Alínea G)</option>
+                            <!-- <option value="A">A - Agricultura, produção animal, caça, floresta e pesca</option>
                             <option value="B">B - Indústrias extractivas</option>
                             <option value="C">C - Indústrias transformadoras</option>
                             <option value="D">D - Electricidade, gás, vapor, água quente e fria e ar frio</option>
@@ -45,7 +52,18 @@
                             <option value="R">R - Actividades artísticas, de espectáculos, desportivas e recreativas</option>
                             <option value="S">S - Outras actividades de serviços</option>
                             <option value="T">T - Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das famílias para uso próprio</option>
-                            <option value="U">U - Actividades dos organismos internacionais e outras instituições extra-territoriais</option>
+                            <option value="U">U - Actividades dos organismos internacionais e outras instituições extra-territoriais</option> -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="setorIRC" name="setorIRC" ng-model="$root.setorIRC">
+                            <option value="A">Alínea A)</option>
+                            <option value="B">Alínea B)</option>
+                            <option value="C">Alínea C)</option>
+                            <option value="D">Alínea D)</option>
+                            <option value="E">Alínea E)</option>
+                            <option value="F">Alínea F)</option>
+                            <option value="G">Alínea G)</option>
                         </select>
                     </div>
                 </div>
@@ -93,7 +111,7 @@
                 </div>
 
                 <div class="col-12 mt-5">
-                    <a class="btn btn-primary btn-lg btn-block" href="./resultado?ano={{ $root.ano }}&CAE={{ $root.CAE }}&rendimentos={{ $root.rendimentos }}&gastos={{ $root.gastos }}&tipo={{ $root.tipo }}">Obter resultado</a>
+                    <a class="btn btn-primary btn-lg btn-block" href="./resultado?ano={{ $root.ano }}&setorIRS={{ $root.setorIRS }}&setorIRC={{ $root.setorIRC }}&rendimentos={{ $root.rendimentos }}&gastos={{ $root.gastos }}&tipo={{ $root.tipo }}">Obter resultado</a>
                 </div>
             </div>
 

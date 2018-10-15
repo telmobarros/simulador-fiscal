@@ -1,153 +1,145 @@
 {
 	"2018" : {
-		"CAE": {
-			"A" : {
-				"nome": "Agricultura, produção animal, caça, floresta e pesca",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
+		"setores": {
+			"IRS": {
+				"A": {
+					"nome": "Vendas de mercadorias e produtos ou prestções de serviços efetuadas no âmbito de atividades de restauração e bedidas e atividades hoteleiras e similares com excepção daquelas que se desenvolvam no âmbito da atividade de exploração de estabelecimentos de alojamento local na modalidade de moradia ou apartamento",
+					"coeficiente":  0.15,
+					"reducao": 0
+				},
+				"B": {
+					"nome": "Atividades profissionais do Artigo 151",
+					"coeficiente": 0.75,
+					"reducao": 0.5
+				},
+				"C": {
+					"nome": "Outros",
+					"coeficiente": 0.35,
+					"reducao": 0.5
+				},
+				"D": {
+					"nome": "Contratos que tenham por objeto a cessão ou utilização temporária da propriedade intelectual ou industrial, ou a prestação de infomrações respeitantes a uma experiência adquirida no setor industrial comercial ou ciêntifico",
+					"coeficiente": 0.95,
+					"reducao": 0
+				},
+				"E": {
+					"nome": "Subsídios ou subvenções não destinados à exploração",
+					"coeficiente": 0.3,
+					"reducao": 0
+				},
+				"F": {
+					"nome": "Subsídios ou subvenções destinados à exploração e restantes rendimentos da categoria B nao previstos nas alienas anteriores",
+					"coeficiente": 0.1,
+					"reducao": 0.5
+				},
+				"G": {
+					"nome": "Transparência fiscal",
+					"coeficiente": 1,
+					"reducao": 0
 				}
 			},
-			"B" : {
-				"nome": "Indústrias extractivas",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"C" : {
-				"nome": "Indústrias transformadoras",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"D" : {
-				"nome": "Electricidade, gás, vapor, água quente e fria e ar frio",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"E" : {
-				"nome": "Captação, tratamento e distribuição de água; saneamento, gestão de resíduos e despoluição",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"F" : {
-				"nome": "Construção",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"G" : {
-				"nome": "Comércio por grosso e a retalho; reparação de veículos automóveis e motociclos",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"H" : {
-				"nome": "Transportes e armazenagem",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"I" : {
-				"nome": "Alojamento, restauração e similares",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"J" : {
-				"nome": "Actividades de informação e de comunicação",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"K" : {
-				"nome": "Actividades financeiras e de seguros",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"L" : {
-				"nome": "Actividades imobiliárias",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"M" : {
-				"nome": "Actividades de consultoria, científicas, técnicas e similares",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"N" : {
-				"nome": "Actividades administrativas e dos serviços de apoio",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"O" : {
-				"nome": "Administração Pública e Defesa; Segurança Social Obrigatória",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"P" : {
-				"nome": "Educação",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"Q" : {
-				"nome": "Actividades de saúde humana e apoio social",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"R" : {
-				"nome": "Actividades artísticas, de espectáculos, desportivas e recreativas",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"S" : {
-				"nome": "Outras actividades de serviços",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"T" : {
-				"nome": "Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das famílias para uso próprio",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
-				}
-			},
-			"U" : {
-				"nome": "Actividades dos organismos internacionais e outras instituições extra-territoriais",
-				"taxas": {
-					"IRS": 0.15,
-					"IRC": 0.15
+			"IRC": {
+				"A": {
+					"nome": "Vendas de mercadorias e produtos ou prestções de serviços efetuadas no âmbito de atividades de restauração e bedidas e atividades hoteleiras e similares com excepção daquelas que se desenvolvam no âmbito da atividade de exploração de estabelecimentos de alojamento local na modalidade de moradia ou apartamento",
+					"coeficiente": 0.04,
+					"reducao": 0.5
+				},
+				"B": {
+					"nome": "Atividades profissionais do Artigo 151",
+					"coeficiente": 0.75,
+					"reducao": 0
+				},
+				"C": {
+					"nome": "Outros",
+					"coeficiente": 0.10,
+					"reducao": 0.5
+				},
+				"D": {
+					"nome": "Contratos que tenham por objeto a cessão ou utilização temporária da propriedade intelectual ou industrial, ou a prestação de infomrações respeitantes a uma experiência adquirida no setor industrial comercial ou ciêntifico",
+					"coeficiente": 0.3,
+					"reducao": 0
+				},
+				"E": {
+					"nome": "Subsídios ou subvenções não destinados à exploração",
+					"coeficiente": 0.95,
+					"reducao": 0
+				},
+				"F": {
+					"nome": "Subsídios ou subvenções destinados à exploração e restantes rendimentos da categoria B nao previstos nas alienas anteriores",
+					"coeficiente": 1,
+					"reducao": 0
+				},
+				"G": {
+					"nome": "Transparência fiscal",
+					"coeficiente": 0.35,
+					"reducao": 0
 				}
 			}
+		},
+		"limites": {
+			"naoSocietario": {
+				"regimeSimplificado": {
+					"rendimentos": 200000
+				}
+			},
+			"societario": {
+				"regimeSimplificado": {
+					"rendimentos": 200000,
+					"baseImposto": 2088
+				}
+			}
+		},
+		"IRS": [
+			{
+				"min": 0,
+				"max": 7091,
+				"A": 0.145,
+				"B": 0.145
+			},
+			{
+				"min": 7091,
+				"max": 10700,
+				"A": 0.23,
+				"B": 0.17367
+			},
+			{
+				"min": 10700,
+				"max": 20261,
+				"A": 0.285,
+				"B": 0.22621
+			},
+			{
+				"min": 20261,
+				"max": 25000,
+				"A": 0.35,
+				"B": 0.24967
+			},
+			{
+				"min": 25000,
+				"max": 36856,
+				"A": 0.37,
+				"B": 0.28838
+			},
+			{
+				"min": 36856,
+				"max": 80640,
+				"A": 0.45,
+				"B": 0.37613
+			},
+			{
+				"min": 80640,
+				"max": null,
+				"A": 0.48,
+				"B": null
+			}
+		],
+		"IRC": {
+			"geral": 0.21,
+			"PME": {
+				"taxa": 0.17,
+				"max": 15000
+			},
+			"excecoes": 0.25
 		}
 	}
 }

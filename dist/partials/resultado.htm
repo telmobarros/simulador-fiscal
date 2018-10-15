@@ -27,50 +27,44 @@
                 <span class="text-muted">Não Societário</span>
             </h3>
             <div class="row">
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4" ng-class="[{'best': $root.nSrS.isBest, 'not-applicable': !$root.nSrS}]">
                     <span class="text-muted">Regime Simplificado</span>
-                    <ul class="list-group my-3 text-left">
+                    <ul class="list-group my-3 text-left" ng-if="$root.nSrS">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                                <h6 class="my-0">Aplicação da taxa IRS  <sup><a href="#anex1" class="text-muted">*1</a></sup></h6>
-                                <small class="text-muted">Artigo 62</small>
+                                <h6 class="my-0">Base de Imposto</h6>
+                                <small class="text-muted">{{ $root.nSrS.baseImpostoString }}</small>
                             </div>
-                            <span class="text-muted">121.64 €</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Taxa extra  <sup><a href="#anex2" class="text-muted">*2</a></sup></h6>
-                                <small class="text-muted">Artigo 151</small>
-                            </div>
-                            <span class="text-muted">Não aplicável</span>
+                            <span class="text-muted">{{ $root.nSrS.baseImposto | largeNumber }} €</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Total</span>
-                            <h4><strong>121.64 €</strong></h4>
+                            <div>
+                                <h5 class="my-0">Total</h5>
+                                <small class="text-muted">{{ $root.nSrS.totalString }}</small>
+                            </div>
+                            <h4><strong>{{ $root.nSrS.total | largeNumber }} €</strong></h4>
                         </li>
                     </ul>
+
+                    <h3 ng-if="!$root.nSrS">Não aplicável</h3>
                 </div>
 
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4" ng-class="[{best: $root.nScO.isBest}]">
                     <span class="text-muted">Contabilidade organizada</span>
                     <ul class="list-group my-3 text-left">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                                <h6 class="my-0">Aplicação da taxa IRS  <sup><a href="#anex1" class="text-muted">*3</a></sup></h6>
-                                <small class="text-muted">Artigo 62</small>
+                                <h6 class="my-0">Base de Imposto</h6>
+                                <small class="text-muted">{{ $root.nScO.baseImpostoString }}</small>
                             </div>
-                            <span class="text-muted">121.64 €</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Taxa extra</h6>
-                                <small class="text-muted">Artigo 151</small>
-                            </div>
-                            <span class="text-muted">52 €</span>
+                            <span class="text-muted">{{ $root.nScO.baseImposto | largeNumber }} €</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Total</span>
-                            <h4><strong>173.64 €</strong></h4>
+                            <div>
+                                <h5 class="my-0">Total</h5>
+                                <small class="text-muted">{{ $root.nScO.totalString }}</small>
+                            </div>
+                            <h4><strong>{{ $root.nScO.total | largeNumber }} €</strong></h4>
                         </li>
                     </ul>
                 </div>
@@ -84,50 +78,44 @@
                 <span class="text-muted">Societário</span>
             </h3>
             <div class="row">
-                <div class="col-md-6 mb-4 best">
+                <div class="col-md-6 mb-4" ng-class="[{'best': $root.srS.isBest, 'not-applicable': !$root.srS}]">
                     <span class="text-muted">Regime Simplificado</span>
-                    <ul class="list-group my-3 text-left">
+                    <ul class="list-group my-3 text-left" ng-if="$root.srS">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                                <h6 class="my-0">Aplicação da taxa IRC  <sup><a href="#anex4" class="text-muted">*4</a></sup></h6>
-                                <small class="text-muted">Artigo 46</small>
+                                <h6 class="my-0">Base de Imposto</h6>
+                                <small class="text-muted">{{ $root.srS.baseImpostoString }}</small>
                             </div>
-                            <span class="text-muted">34.12 €</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Taxa extra  <sup><a href="#anex2" class="text-muted">*2</a></sup></h6>
-                                <small class="text-muted">Artigo 151</small>
-                            </div>
-                            <span class="text-muted">Não aplicável</span>
+                            <span class="text-muted">{{ $root.srS.baseImposto | largeNumber }} €</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Total</span>
-                            <h4><strong>34.12 €</strong></h4>
+                            <div>
+                                <h5 class="my-0">Total</h5>
+                                <small class="text-muted">{{ $root.srS.totalString }}</small>
+                            </div>
+                            <h4><strong>{{ $root.srS.total | largeNumber }} €</strong></h4>
                         </li>
                     </ul>
+
+                    <h3 ng-if="!$root.srS">Não aplicável</h3>
                 </div>
 
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4" ng-class="[{best: $root.scO.isBest}]">
                     <span class="text-muted">Contabilidade organizada</span>
                     <ul class="list-group my-3 text-left">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                                <h6 class="my-0">Aplicação da taxa IRC  <sup><a href="#anex1" class="text-muted">*3</a></sup></h6>
-                                <small class="text-muted">Artigo 62</small>
+                                <h6 class="my-0">Base de Imposto</h6>
+                                <small class="text-muted">{{ $root.scO.baseImpostoString }}</small>
                             </div>
-                            <span class="text-muted">111.64 €</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Taxa extra</h6>
-                                <small class="text-muted">Artigo 151</small>
-                            </div>
-                            <span class="text-muted">52 €</span>
+                            <span class="text-muted">{{ $root.scO.baseImposto | largeNumber }} €</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Total</span>
-                            <h4><strong>163.64 €</strong></h4>
+                            <div>
+                                <h5 class="my-0">Total</h5>
+                                <small class="text-muted">{{ $root.scO.totalString }}</small>
+                            </div>
+                            <h4><strong>{{ $root.scO.total | largeNumber }} €</strong></h4>
                         </li>
                     </ul>
                 </div>
